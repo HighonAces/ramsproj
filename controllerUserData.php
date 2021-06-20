@@ -31,7 +31,7 @@ if(isset($_POST['signup'])){
 
                 echo "<script>
 alert('Your registration is successful...Now please login to proceed');
-window.location.href='index.php';
+window.location.href='login.php';
 </script>";
         }else{
             $errors['db-error'] = "Failed while inserting data into database!";
@@ -112,7 +112,7 @@ window.location.href='index.php';
             if($run_query){
                 $subject = "Password Reset Code";
                 $message = "Your password reset code is $code";
-                $sender = "kodipakasriram@gmail.com";
+                $sender = "";
                 if(mail($email, $subject, $message, $sender)){
                     $info = "We've sent a passwrod reset otp to your email - $email";
                     $_SESSION['info'] = $info;
@@ -174,6 +174,6 @@ window.location.href='index.php';
     
    //if login now button click
     if(isset($_POST['login-now'])){
-        header('Location: index.php');
+        header('Location: login.php');
     }
 ?>

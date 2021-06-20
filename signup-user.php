@@ -13,7 +13,7 @@
         <div class="row">
             <div class="col-md-4 offset-md-4 form">
                 <form action="signup-user.php" method="POST" autocomplete="">
-                    <h2 class="text-center">Signup Here for Wallpaper</h2>
+                    <h4 class="text-center">Signup Here for WallPoster Store</h4>
                     <p class="text-center">It's quick and easy.</p>
                     <?php
                     if(count($errors) == 1){
@@ -55,7 +55,7 @@
                     <div class="form-group">
                         <input class="form-control button" type="submit" name="signup" value="Signup">
                     </div>
-                    <div class="link login-link text-center">Already a member? <a href="index.php">Login here</a></div>
+                    <div class="link login-link text-center">Already a member? <a href="login.php">Login here</a></div>
                 </form>
             </div>
         </div>
